@@ -1,0 +1,81 @@
+.sidebar-nav li p {
+    font-weight: 600;
+    font-size: 1.17em;
+}
+
+.nexter {
+    display: flex;
+    padding: 25px 0;
+    border-bottom: 1px dotted #ddd;
+}
+
+.nexter .profile dt,
+.nexter .profile dd,
+.nexter .profile ul,
+.nexter .profile li {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.nexter .avatar {
+    width: 80px;
+    height: 80px;
+    flex: 0 0 80px;
+}
+
+.nexter .avatar img {
+    border-radius: 100%;
+}
+
+.nexter .profile {
+    flex: 1;
+    padding-left: 26px;
+}
+
+.nexter .profile h3 {
+    margin: 0px;
+}
+
+.nexter dl {
+    margin-top: 0.6em;
+}
+
+.nexter .profile dt {
+    text-transform: uppercase;
+    font-size: 0.84em;
+    font-weight: 600;
+}
+
+.nexter .profile dt::after {
+    content: "";
+    margin-right: 7px;
+  }
+
+.nexter .profile dd::after {
+    display: block;
+    content: " ";
+    margin-top: 0.6em;
+}
+
+.nexter .profile li {
+    display: inline-block;
+}
+
+.nexter .profile li::after {
+    display: inline-block;
+    content: "·";
+    margin: 0 8px;
+}
+
+.nexter .profile li:last-child::after {
+    content: "";
+}
+
+.nexter .profile .social a {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+    margin-right: 4px;
+}

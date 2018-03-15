@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="//unpkg.com/docsify-copy-code/styles.css">
+  <meta charset="utf-8">
+  <title>Cloudopt Next</title>
+  <link rel="icon" href="/images/favicon.png" type="image/png" sizes="16x16">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cloudopt Next is a very lightweight micro-service framework based on kotlin and vertx for the Next generation. ">
+  <meta name="keywords" content="kotlin,java,vertx,java-web,java-library,java-8,java-9,springboot,cloudopt,next,web,framework,jfinal,resty,restful-api">
+  <!-- Resource style -->
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+  <body>
+    <div id="app"></div>
+    <script src="//unpkg.com/docsify-copy-code/index.js"></script>
+    <script>
+      window.$docsify = {
+        name: "Cloudopt Next",
+        loadNavbar: true,
+        loadSidebar: true,
+        subMaxLevel: 2,
+        nameLink: '/',
+        themeColor: '#3333CC',
+        formatUpdated: '{MM}/{DD} {HH}:{mm}',
+        ga: 'UA-101903685-1',
+        plugins: [
+          window.DocsifyCopyCodePlugin.init()
+        ],
+        search: 'auto', 
+
+        search: [
+          '/', 
+          '/zh-cn/'
+        ],
+
+        search: {
+          maxAge: 86400000, 
+          paths: [],
+          placeholder: {
+            '/zh-cn/': '搜索...',
+            '/': 'Search...'
+          },
+
+          noData: {
+            '/zh-cn/': '找不到结果',
+            '/': 'No Results'
+          },
+
+          depth: 6
+        }
+      };
+    </script>
+    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-java.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-kotlin.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-yaml.js"></script>
+  </body>
+
+</html>

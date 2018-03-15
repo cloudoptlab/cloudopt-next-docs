@@ -1,0 +1,3 @@
+When an error occurs, Cloudopt Next will automatically call the error interceptor for processing. The default error interceptor [DefaultErrorHandler](https://github.com/cloudoptlab/cloudopt-next/blob/master/cloudopt-next-web/src/main/java/net/cloudopt/next/web/handler/DefaultErrorHandler.kt)intercepts 404 and 500 errors and outputs an error message.
+
+If you need to handle more errors, you can imitate DefaultErrorHandler to create a Handler, and modify the corresponding configuration in the configuration file.
