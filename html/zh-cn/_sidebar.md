@@ -29,4 +29,5 @@
 
 * 更多
   * [加入Cloudopt Next社区](/zh-cn/join-us.md)
+  * [如何贡献](/zh-cn/contributing.md)
   * [贡献者](/zh-cn/contributors.md)

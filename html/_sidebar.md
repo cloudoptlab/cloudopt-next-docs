@@ -29,4 +29,5 @@
 
 * More
   * [Join the Cloudopt Next community](/join-us.md)
+  * [How to contribute](/contributing.md)
   * [Contributors](/contributors.md)
