@@ -13,19 +13,19 @@
 
 * Extension
   * [Use Handler](/handler.md)
-  * [use plug-in](/use-plugin.md)
-  * [use EventBus](/eventbus.md)
+  * [Use plug-in](/use-plugin.md)
+  * [Use EventBus](/eventbus.md)
   * [Avoid blocking](/avoid-blocking.md)
 
 * Official plug-in
-  * [encrypt](/plugin-encrypt.md)
-  * [jooq](/plugin-jooq.md)
-  * [redis](/plugin-redis.md)
-  * [kafka](/plugin-kafka.md)
-  * [logging](/plugin-logging.md)
-  * [spring](/plugin-spring.md)
-  * [waf](/plugin-waf.md)
-  * [yaml](/plugin-yaml.md)
+  * [Encrypt](/plugin-encrypt.md)
+  * [Jooq](/plugin-jooq.md)
+  * [Redis](/plugin-redis.md)
+  * [Kafka](/plugin-kafka.md)
+  * [Logging](/plugin-logging.md)
+  * [Spring](/plugin-spring.md)
+  * [Waf](/plugin-waf.md)
+  * [Yaml](/plugin-yaml.md)
 
 * More
   * [Join the Cloudopt Next community](/join-us.md)

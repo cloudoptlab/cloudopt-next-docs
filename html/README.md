@@ -1,19 +1,19 @@
 ![Cloudopt Next](https://github.com/cloudoptlab/cloudopt-next/raw/master/logo.png)
 
 
-Cloudopt Next is a very lightweight micro-service framework based on kotlin and vertx for the Next generation. You can handle url parsing, data encapsulation, and Json output. Radically reducing development time and improving development experience. Cloudopt Next absorbed the ideas of [Spring Boot](https://github.com/spring-projects/spring-boot)，[JFinal](https://github.com/jfinal/jfinal)，[Resty](https://github.com/Dreampie/Resty)，[Vertx](https://github.com/vert-x3/vertx-web) and other excellent projects, and not only had a very good development experience, but also had a very low learning curve.
+Cloudopt Next is a very lightweight micro-service framework based on kotlin and vertx for the Next generation. You can handle url parsing, data encapsulation, and Json output. Radically reducing development time and improving development experience. Cloudopt Next absorbed the ideas of [Spring Boot](https://github.com/spring-projects/spring-boot)，[JFinal](https://github.com/jfinal/jfinal)，[Resty](https://github.com/Dreampie/Resty)，[Vertx](https://github.com/vert-x3/vertx-web) and other excellent projects, and not only had a excellent development experience, but also had a shallow learning curve.
 
 
 **Cloudopt Next has the following features:**
 
-- minimalist design, almost 0 configuration, uses yml like Spring Boot.
-- get out of the traditional MVC and do professional things professionally.
-- support plugin system with strong expansibility.
-- independent of Tomcat and Jetty.
-- support FreeMarker, Beetl...
-- support both Kotlin and Java development.
-- support [Vertx](http://vertx.io/).
-- a series of easy-to-use toolsets, such as cloudopt-next-logging, cloudopt-next-kafka, cloudopt-next-encrypt, cloudopt-next-waf, etc.
+- Minimalist design, almost 0 configuration, uses yml like Spring Boot.
+- Get out of the traditional MVC and do professional things professionally.
+- Support plugin system with strong expansibility.
+- Independent of Tomcat and Jetty.
+- Support FreeMarker, Beetl...
+- Support both Kotlin and Java development.
+- Support [Vertx](http://vertx.io/).
+- A series of easy-to-use toolsets, such as cloudopt-next-logging, cloudopt-next-kafka, cloudopt-next-encrypt, cloudopt-next-waf, etc.
 
 
 
@@ -59,7 +59,7 @@ Having trouble with Cloudopt Next? We’d like to help!
 
 - Follow our [twitter](https://twitter.com/) to get the latest information.
 - Check the reference [documentation](https://next.cloudopt.net) carefully for specific code cases or common problems.
-- If you have a problem after the upgrade, check the upgrade instructions in the [Wiki](https://github.com/cloudoptlab/cloudopt-next/wiki).
+- If you have a problem with the upgrade, check the upgrade instructions in the [Wiki](https://github.com/cloudoptlab/cloudopt-next/wiki).
 - Send mail to support@cloudopt.net.
 - Send [issue](https://github.com/cloudoptlab/cloudopt-next/issues) to your question on GitHub, we will answer it as soon as possible.
 - If you are in China, you can also join the QQ group: 557692142.

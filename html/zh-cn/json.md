@@ -14,11 +14,11 @@ fun help(){
 
 ````java
 public void help(){
-    Jsoner.INSTANCE.toJsonString(object);
-    Jsoner.INSTANCE.toJsonObject("json");
-    Jsoner.INSTANCE.toJsonObject("json",TestBean.class);
-    Jsoner.INSTANCE.toJsonArray("json");
-    Jsoner.INSTANCE.toJsonArray("json",TestBean.java);
+    Jsoner.toJsonString(object);
+    Jsoner.toJsonObject("json");
+    Jsoner.toJsonObject("json",TestBean.class);
+    Jsoner.toJsonArray("json");
+    Jsoner.toJsonArray("json",TestBean.java);
 }
 ````
 

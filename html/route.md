@@ -42,7 +42,7 @@ Specific URLs can be set in the @API, and methods in this class will also be aut
 
 ## RESTful
 
-Cloudopt Next supports @GET, @POST, @PUT, @DELETE, and @PATCH, which correspond to the five methods in the HTTP request. RESTful-related annotations can only be used on methods, as are the @APIs that support configuring URLs. Cloudopt Next automatically splices URLs configured in the @API with URLs configured in RESTful annotations.
+Cloudopt Next supports @GET, @POST, @PUT, @DELETE, and @PATCH, which correspond to the five methods in the HTTP request. RESTful-related annotations can only be used on plans, as are the @APIs that support configuring URLs. Cloudopt Next automatically splices URLs set in the @API with URLs configured in RESTful annotations.
 
 Such as:
 
@@ -363,9 +363,9 @@ public class IndexController extends Resource {
 }
 ````
 
-##Get uploaded file
+##Get uploaded the file
 
-Cloudopt Next is based on vertx-web, vertx-web will automatically rename and store when obtaining user uploaded files, so Cloudopt Next also continues this function. When a user uploads a file, Cloudopt Next automatically renames and stores it in the uploaded file directory. Only the FileUpload object list can be obtained in the route
+Cloudopt Next is based on vertx-web, vertx-web will automatically rename and store when obtaining user uploaded files, so Cloudopt Next also continues this function. When a user uploads a file, Cloudopt Next automatically renames and saves it in the uploaded file directory. Only the FileUpload object list can be obtained in the route.
 
 ````kotlin
 @API("/")

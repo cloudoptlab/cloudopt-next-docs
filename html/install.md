@@ -2,13 +2,13 @@
 
 Cloudopt Next is currently in beta and there is no official release, but you can use the SNAPSHOT version.
 
-The version of Cloudopt Next will use the version number + suffix, for example: 1.0.0-SNAPSHOT. There are generally the following versions of suffixes:
+The version of Cloudopt Next will use the version number + suffix, for example:，1.0.0-SNAPSHOT. There are generally the following versions of suffixes:
 
-- SNAPSHOT：Test version. Each update may change significantly. There may be more serious BUG.
+- SNAPSHOT：Test version. Each update may change significantly. There may be more severe BUG.
 - BETA：Preview version. Before the official version will enter the BETA stage. This version has already made great progress with respect to SNAPSHOT and is stable a lot, but there may still be problems.
-- RELEASES：Official version. After long-term testing, there are generally no major problems.
+- RELEASES：Official version. After long-term testing, there are generally no significant problems.
 
-The version number is generally three, and each update will change the version number according to the specific update content. If only the BUG is fixed, it will only change the third place, such as: 1.0.1. The addition of new features (including removal of old features) and other major changes will change the second version number. If there are very large changes that may not be compatible with the previous version, the first version number will be modified.
+The version number is generally three, and each update will change the version number according to the specific update content. If only the BUG is fixed, it will just change the third place, such as, 1.0.1. The addition of new features (including removal of old elements) and other major changes will improve the second version number. If there are very extensive changes that may not be compatible with the previous version, the first version number will be modified.
 
 ## System Requirements
 

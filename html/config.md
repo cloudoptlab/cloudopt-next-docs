@@ -34,11 +34,11 @@ The cloudopt-next-web project reads under net.cloudopt.next.web, and net.cloudop
 
 ## Developer mode
 
-When dev is true, the application-dev.yml file is read again and the application.yml setting is overwritten. And vice versa, read application-pro.yml when dev is false. Help you separate development environment and production environment.
+When dev is true, the application-dev.yml file is reread and the application.yml setting is overwritten. And vice versa, read application-pro.yml when dev is false. Help you separate development environment and production environment.
 
 ## Get configuration
 
-When the server starts up, it reads the configuration file and converts it to an object for management by ConfigManager. If you need to modify the configuration or obtain the configuration, you can directly obtain or modify it through the ConfigManager.
+When the server starts up, it reads the configuration file and converts it to an object for management by ConfigManager. If you need to modify the configuration or obtain the configuration, you can directly purchase or alter it through the ConfigManager.
 
 ````kotlin
 ConfigManager.webConfig.dev = true
@@ -48,8 +48,9 @@ println(ConfigManager.webConfig.dev)
 ````java
 ConfigManager.getWebConfig().setDev(true);
 System.out.println(ConfigManager.getWebConfig().getDev());
-`````
+​`````
 
 ## Get custom configuration
 
 If you need to get the custom configuration in application.yml, you can directly get the configuration under net.cloudopt.next.test by ConfigManager.initMap("test") or ConfigManager.initMap("test",TestBean.class).Ideal for plug-in development.
+````

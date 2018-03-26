@@ -1,6 +1,6 @@
-[jOOQ](http://www.jooq.org/)is a toolkit for writing SQL based on Java. It has the unique advantages of simple, lightweight, functional programming and writing SQL, and is very suitable for agile and rapid iterative development. It is also the Orm recommended by Cloudopt Next.
+[jOOQ](http://www.jooq.org/) is a toolkit for writing SQL based on Java. It has the unique advantages of simple, lightweight, functional programming and writing SQL, and is very suitable for agile and rapid iterative development. It is also the Orm recommended by Cloudopt Next.
 
-Cloudopt Next provides a plug-in to jOOQ for easy startup of Jooq. You only need to configure the datasource and jooq in the Cloudopt Next configuration file.
+Cloudopt Next provides a plug-in to JOOQ for easy startup of JOOQ. You only need to configure the data source and JOOQ in the Cloudopt Next configuration file.
 
 Please refer to the appropriate dependencies before use. If you do not inherit cloudopt-next-parent, please add the version number yourself.
 
