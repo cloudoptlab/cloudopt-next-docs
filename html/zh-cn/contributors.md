@@ -85,7 +85,7 @@
                 <span class="sr-only">City</span>
             </dt>
             <dd>
-                Tucson, USA
+                JaoPing, China
             </dd>
             <dt>
                 <i class="fa fa-globe"></i>
@@ -189,7 +189,7 @@
 
 <div class="nexter">
     <div class="avatar">
-        <img src="https://avatars1.githubusercontent.com/u/6183506?s=460&v=4" alt="Ccixyj" width="80" height="80">
+        <img src="/images/avatar/2018032602.jpg" alt="Ccixyj" width="80" height="80">
     </div>
     <div class="profile">
         <h3 data-official-title="Benevolent Dictator For Life">
