@@ -74,7 +74,7 @@ You will need to access via GET http://localhost:8080/hello.
 
 ## Get parameters
 
-If you need to get the parameters passed by the client, you can use the getParam() method directly in the method.
+If you need to get theparameters passed by the client, you can use the getParam() method directly in the method.
 
 ````kotlin
 @API("/")
@@ -127,6 +127,33 @@ public class IndexController extends Resource {
 
 }
 ````
+
+## Get form datas
+
+If you need to get the form parameters passed by the client, you can get them directly in the method using the getAttr () method。
+
+````kotlin
+@API("/")
+class IndexController : Resource() {
+
+    @GET
+    fun get(){
+        renderText(getAttr("name") ?: "")
+    }
+
+}
+````
+
+````java
+@API("/")
+public class IndexController extends Resource {
+
+    @GET
+    public void get(){
+        renderText(getAttr("name"));
+    }
+
+}
 
 ## Cookie
 

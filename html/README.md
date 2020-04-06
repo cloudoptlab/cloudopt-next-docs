@@ -6,11 +6,11 @@ Cloudopt Next is a very lightweight micro-service framework based on kotlin and 
 
 **Cloudopt Next has the following features:**
 
-- Minimalist design, almost 0 configuration, uses yml like Spring Boot.
+- Minimalist design, almost 0 configuration.
 - Get out of the traditional MVC and do professional things professionally.
 - Support plugin system with strong expansibility.
 - Independent of Tomcat and Jetty.
-- Support FreeMarker, Beetl...
+- Support FreeMarker, Hbs...
 - Support both Kotlin and Java development.
 - Support [Vertx](http://vertx.io/).
 - A series of easy-to-use toolsets, such as cloudopt-next-logging, cloudopt-next-kafka, cloudopt-next-encrypt, cloudopt-next-waf, etc.
@@ -59,7 +59,6 @@ Having trouble with Cloudopt Next? We’d like to help!
 - Send mail to support@cloudopt.net.
 - Send [issue](https://github.com/cloudoptlab/cloudopt-next/issues) to your question on GitHub, we will answer it as soon as possible.
 - If you are in China, you can also join the QQ group: 557692142.
-- Join the group [WhatsApp](https://chat.whatsapp.com/FZBYw2ZSMdRHqappnKDdk0).
 
 ## Reporting Issues
 

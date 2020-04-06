@@ -47,3 +47,33 @@ public class TestPlugin implements Plugin {
     }
 }
 ````
+
+我们还提供了大量的工具来帮助你更方便的开发插件。
+
+### 自动扫描注解
+
+````kotlin
+Classer.scanPackageByAnnotation(CloudoptServer.packageName, true, AutoKafka::class.java)
+.forEach { clazz ->
+    println(clazz)
+    }
+}
+````
+
+### 自动创建对象
+
+````kotlin
+var obj = Beaner.newInstance<KafkaListener>(clazz)
+````
+
+### 读取配置文件
+
+````kotlin
+var config = ConfigManager.init("test")
+````
+
+### 获取所有的路由器
+
+````kotlin
+var controllers = CloudoptServer.controllers
+````

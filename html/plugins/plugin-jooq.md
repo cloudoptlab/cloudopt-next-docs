@@ -1,8 +1,10 @@
 [jOOQ](http://www.jooq.org/) is a toolkit for writing SQL based on Java. It has the unique advantages of simple, lightweight, functional programming and writing SQL, and is very suitable for agile and rapid iterative development. It is also the Orm recommended by Cloudopt Next.
 
-Cloudopt Next provides a plug-in to JOOQ for easy startup of JOOQ. You only need to configure the data source and JOOQ in the Cloudopt Next configuration file.
+Cloudopt Next provides a plug-in to jOOQ for easy startup of jOOQ. You only need to configure the data source and jOOQ in the Cloudopt Next configuration file.
 
-Please refer to the appropriate dependencies before use. If you do not inherit cloudopt-next-parent, please add the version number yourself.
+The jooq plug-in of cloudopt next uses HikariCPPool as the connection pool by default. If you need to use other connection pools, you can refer to [HikariCPPool] (https://github.com/cloudopt/cloudopt-next/blob/master/cloudopt-next-jooq/src/main/java/net/cloudopt/next/jooq/pool/hikaricpppool.kt) to implement and modify the configuration.
+
+Please refer to the appropriate dependencies before use, please add the version number yourself.
 
 ````xml
 <dependency>
@@ -11,18 +13,19 @@ Please refer to the appropriate dependencies before use. If you do not inherit c
 </dependency>
 ````
 
-````yaml
-net:
-  cloudopt:
-    next:
-      datasource:
-        jdbcUrl: "jdbc:mysql://localhost:3306/cloudopt_example?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=true"
-        username: "root"
-        password: "root"
-        driverClassName: "com.mysql.cj.jdbc.Driver"
-      jooq:
-        pool: "net.cloudopt.next.jooq.pool.HikariCPPool"
-        database: "mysql"
+````json
+{
+  "datasource": {
+    "jdbcUrl": "jdbc:mysql://127.0.0.1:8889/cloudopt?useUnicode=true&character_set_server=utf8mb4&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true",
+    "username": "root",
+    "password": "root",
+    "driverClassName": "com.mysql.cj.jdbc.Driver"
+  },
+  "jooq": {
+    "pool": "net.cloudopt.next.jooq.pool.HikariCPPool",
+    "database": "mysql"
+  }
+}
 ````
 
 | Name     | Description|
@@ -37,18 +40,11 @@ net:
 | Database     |
 |:--------:|
 | mysql|
-| mysql 5.7|
-| mysql 8.0|
 | cubrid|
 | derby|
 | firebird|
-| firebird 2.5|
-| firebird 3.0|
 | mariadb|
 | postgres|
-| postgres 9.3|
-| postgres 9.4|
-| postgres 9.5|
 | sqlite|
 
 Adding a plugin before the server is started automatically creates a connection pool and initializes the Jooq.
@@ -66,5 +62,3 @@ fun main(args: Array<String>) {
     CloudoptServer.run(TestCase.class);
 }
 ````
-
-If you need to use other connection pools, you can refer to [HikariCPPool](https://github.com/cloudoptlab/cloudopt-next/blob/master/cloudopt-next-jooq/src/main/java/net/cloudopt/next/ Jooq/pool/HikariCPPool.kt) Implement and modify the configuration.

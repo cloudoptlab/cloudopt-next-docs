@@ -1,10 +1,10 @@
 ## 使用Render
 
-Render是Resource类中已经写好的语法糖，当您需要输出东西时直接调用方法即可。目前支持的视图有Html、Json、Text、FreeMaker、Hbs、Beetl。这几种都是可以在Resource中直接使用的。
+Render是Resource类中已经写好的语法糖，当您需要输出东西时直接调用方法即可。目前支持的视图有 Html、Json、Text、FreeMaker、Hbs。这几种都是可以在 Resource 中直接使用的。
 
-需要注意的是FreeMaker、Hbs、Beetl都需要自行引用相应的依赖，Cloudopt Next并没有附带。更多代码案例可以看[GitHub](https://github.com/cloudoptlab/cloudopt-next/blob/master/cloudopt-next-web/src/test/java/net/cloudopt/next/web/test/controller/IndexController.kt)。
+需要注意的是 FreeMaker、Hbs 都需要自行引用相应的依赖，Cloudopt Next并没有附带。更多代码案例可以看[GitHub](https://github.com/cloudoptlab/cloudopt-next/blob/master/cloudopt-next-web/src/test/java/net/cloudopt/next/web/test/controller/IndexController.kt)。
 
-渲染页面时Render会根据配置文件中的webroot项的配置，自动读取文件，默认是在templates文件夹下。
+渲染页面时Render会根据配置文件中的 templates 项的配置，自动读取文件，默认是在templates文件夹下。
 
 
 ## 创建自己的Render

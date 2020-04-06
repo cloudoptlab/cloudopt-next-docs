@@ -50,31 +50,27 @@ public static void main(String[] args){
 
 如果您启动成功的话会看到类似下面的控制台输出：
 ````shell
-[Cloudopt Next] 2018-03-04 18:39:12 net.cloudopt.next.web.CloudoptServer [INFO ] - [PLUGIN] Registered plugin：net.cloudopt.next.jooq.JooqPlugin
-[Cloudopt Next] 2018-03-04 18:39:12 net.cloudopt.next.web.CloudoptServer [INFO ] -  ______  __      ______  __  __  _____   ______  ______  ______
-[Cloudopt Next] 2018-03-04 18:39:12 net.cloudopt.next.web.CloudoptServer [INFO ] - /\  ___\/\ \    /\  __ \/\ \/\ \/\  __-./\  __ \/\  == \/\__  _\
-[Cloudopt Next] 2018-03-04 18:39:12 net.cloudopt.next.web.CloudoptServer [INFO ] - \ \ \___\ \ \___\ \ \/\ \ \ \_\ \ \ \/\ \ \ \/\ \ \  _-/\/_/\ \/
-[Cloudopt Next] 2018-03-04 18:39:12 net.cloudopt.next.web.CloudoptServer [INFO ] -  \ \_____\ \_____\ \_____\ \_____\ \____-\ \_____\ \_\     \ \_\
-[Cloudopt Next] 2018-03-04 18:39:12 net.cloudopt.next.web.CloudoptServer [INFO ] -   \/_____/\/_____/\/_____/\/_____/\/____/ \/_____/\/_/      \/_/
-[Cloudopt Next] 2018-03-04 18:39:12 net.cloudopt.next.web.CloudoptServer [INFO ] - 
-[Cloudopt Next] 2018-03-04 18:39:12 net.cloudopt.next.web.CloudoptServer [INFO ] - Java Version: 1.8.0_131
-[Cloudopt Next] 2018-03-04 18:39:12 net.cloudopt.next.web.CloudoptServer [INFO ] - Java Provider: Oracle Corporation
-[Cloudopt Next] 2018-03-04 18:39:12 net.cloudopt.next.web.CloudoptServer [INFO ] - System: Windows 10
-[Cloudopt Next] 2018-03-04 18:39:12 net.cloudopt.next.web.CloudoptServer [INFO ] - Time: 2018-03-04 18:39:12
--------------------------------------------------------------------------------------------
-[Cloudopt Next] 2018-03-04 18:39:12 net.cloudopt.next.web.CloudoptServer [INFO ] - [FAILURE HANDLER] Registered failure handler：net.cloudopt.next.web.handler.DefaultErrorHandler
-[Cloudopt Next] 2018-03-04 18:39:12 net.cloudopt.next.web.CloudoptServer [INFO ] - [HANDLER] Registered handler：net.cloudopt.next.web.handler.WafHandler
-[Cloudopt Next] 2018-03-04 18:39:12 net.cloudopt.next.web.CloudoptServer [INFO ] - [HANDLER] Registered handler：net.cloudopt.next.web.handler.CorsHandler
-[Cloudopt Next] 2018-03-04 18:39:12 net.cloudopt.next.web.CloudoptServer [INFO ] - [HANDLER] Registered handler：net.cloudopt.next.web.handler.ShowRouteHandler
-[Cloudopt Next] 2018-03-04 18:39:12 net.cloudopt.next.web.CloudoptServer [INFO ] - [HANDLER] Registered handler：net.cloudopt.next.web.handler.CookieCorsHandler
-[Cloudopt Next] 2018-03-04 18:39:12 net.cloudopt.next.web.CloudoptServer [INFO ] - [RESOURCE] Registered Resource :get | /
-[Cloudopt Next] 2018-03-04 18:39:12 net.cloudopt.next.web.CloudoptServer [INFO ] - [RESOURCE] Registered Resource :get | /api/v1/todo
-[Cloudopt Next] 2018-03-04 18:39:12 net.cloudopt.next.web.CloudoptServer [INFO ] - [RESOURCE] Registered Resource :put | /api/v1/todo/:id
-[Cloudopt Next] 2018-03-04 18:39:12 net.cloudopt.next.web.CloudoptServer [INFO ] - [RESOURCE] Registered Resource :delete | /api/v1/todo/:id
-[Cloudopt Next] 2018-03-04 18:39:12 net.cloudopt.next.web.CloudoptServer [INFO ] - [RESOURCE] Registered Resource :post | /api/v1/todo
-==========================================================================================================
-[Cloudopt Next] 2018-03-04 18:39:12 net.cloudopt.next.web.CloudoptServer [INFO ] - Cloudopt Next started is success!
-==========================================================================================================
+[Cloudopt Next] 2020-04-06 21:01:19 net.cloudopt.next.web.CloudoptServer [INFO ] - ℹ️ INFO:  ______  __      ______  __  __  _____   ______  ______  ______
+[Cloudopt Next] 2020-04-06 21:01:19 net.cloudopt.next.web.CloudoptServer [INFO ] - ℹ️ INFO: /\  ___\/\ \    /\  __ \/\ \/\ \/\  __-./\  __ \/\  == \/\__  _\
+[Cloudopt Next] 2020-04-06 21:01:19 net.cloudopt.next.web.CloudoptServer [INFO ] - ℹ️ INFO: \ \ \___\ \ \___\ \ \/\ \ \ \_\ \ \ \/\ \ \ \/\ \ \  _-/\/_/\ \/
+[Cloudopt Next] 2020-04-06 21:01:19 net.cloudopt.next.web.CloudoptServer [INFO ] - ℹ️ INFO:  \ \_____\ \_____\ \_____\ \_____\ \____-\ \_____\ \_\     \ \_\
+[Cloudopt Next] 2020-04-06 21:01:19 net.cloudopt.next.web.CloudoptServer [INFO ] - ℹ️ INFO:   \/_____/\/_____/\/_____/\/_____/\/____/ \/_____/\/_/      \/_/
+[Cloudopt Next] 2020-04-06 21:01:19 net.cloudopt.next.web.CloudoptServer [INFO ] - ℹ️ INFO: 
+[Cloudopt Next] 2020-04-06 21:01:19 net.cloudopt.next.web.CloudoptServer [INFO ] - ℹ️ INFO: Java Version: 1.8.0_242
+[Cloudopt Next] 2020-04-06 21:01:19 net.cloudopt.next.web.CloudoptServer [INFO ] - ℹ️ INFO: Java Provider: Eclipse OpenJ9
+[Cloudopt Next] 2020-04-06 21:01:19 net.cloudopt.next.web.CloudoptServer [INFO ] - ℹ️ INFO: System: Mac OS X
+[Cloudopt Next] 2020-04-06 21:01:19 net.cloudopt.next.web.CloudoptServer [INFO ] - ℹ️ INFO: Time: 2020-04-06 21:01:19
+[Cloudopt Next] 2020-04-06 21:01:19 net.cloudopt.next.web.CloudoptServer [INFO ] - ℹ️ INFO: Listener Port: 9090
+[Cloudopt Next] 2020-04-06 21:01:19 net.cloudopt.next.web.CloudoptServer [INFO ] - ℹ️ INFO: -------------------------------------------------------------------------------------------
+[Cloudopt Next] 2020-04-06 21:01:19 net.cloudopt.next.web.CloudoptServer [INFO ] - ℹ️ INFO: [FAILURE HANDLER] Registered failure handler：net.cloudopt.next.web.handler.DefaultErrorHandler
+[Cloudopt Next] 2020-04-06 21:01:19 net.cloudopt.next.web.CloudoptServer [INFO ] - ℹ️ INFO: [HANDLER] Registered handler：net.cloudopt.next.web.handler.ShowRouteHandler
+[Cloudopt Next] 2020-04-06 21:01:19 net.cloudopt.next.web.CloudoptServer [INFO ] - ℹ️ INFO: [HANDLER] Registered handler：net.cloudopt.next.web.handler.CorsHandler
+[Cloudopt Next] 2020-04-06 21:01:19 net.cloudopt.next.web.CloudoptServer [INFO ] - ℹ️ INFO: [HANDLER] Registered handler：net.cloudopt.next.web.handler.CookieCorsHandler
+[Cloudopt Next] 2020-04-06 21:01:19 net.cloudopt.next.web.CloudoptServer [INFO ] - ℹ️ INFO: [HANDLER] Registered handler：net.cloudopt.next.web.handler.WafHandler
+[Cloudopt Next] 2020-04-06 21:01:19 net.cloudopt.next.web.CloudoptServer [INFO ] - ℹ️ INFO: ==========================================================================================================
+[Cloudopt Next] 2020-04-06 21:01:19 net.cloudopt.next.web.CloudoptServer [INFO ] - ℹ️ INFO: 🐋 Cloudopt Next started is success!
+[Cloudopt Next] 2020-04-06 21:01:19 net.cloudopt.next.web.CloudoptServer [INFO ] - ℹ️ INFO: http://127.0.0.1:8080
+[Cloudopt Next] 2020-04-06 21:01:19 net.cloudopt.next.web.CloudoptServer [INFO ] - ℹ️ INFO: ==========================================================================================================
 ````
 
 控制台输出包含两个部分，第一个部分是Banner，第二个部分是会输出注册成功的路由、Handler等等。如果您需要替换Banner，只需要在项目的resource文件夹下新建一个banner.txt即可。为了帮助您更好的输出Banner，Cloudopt Next支持自动替换Banner中的变量，目前Cloudopt Next支持以下变量：

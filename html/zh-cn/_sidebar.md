@@ -13,19 +13,23 @@
 
 * 扩展
   * [使用Handler](/zh-cn/handler.md)
+  * [SockJS](/zh-cn/sockjs.md)
   * [使用插件](/zh-cn/use-plugin.md)
   * [使用EventBus](/zh-cn/eventbus.md)
-  * [避免blocking](/zh-cn/avoid-blocking.md)
+  * [避免Blocking](/zh-cn/avoid-blocking.md)
+  * [API文档](/zh-cn/apidoc.md)
+  * [部署](/zh-cn/deploy.md)
 
 * 官方插件
-  * [encrypt](/zh-cn/plugin-encrypt.md)
-  * [jooq](/zh-cn/plugin-jooq.md)
-  * [redis](/zh-cn/plugin-redis.md)
-  * [kafka](/zh-cn/plugin-kafka.md)
-  * [logging](/zh-cn/plugin-logging.md)
-  * [spring](/zh-cn/plugin-spring.md)
-  * [waf](/zh-cn/plugin-waf.md)
-  * [yaml](/zh-cn/plugin-yaml.md)
+  * [encrypt](/zh-cn/plugins/plugin-encrypt.md)
+  * [jooq](/zh-cn/plugins/plugin-jooq.md)
+  * [redis](/zh-cn/plugins/plugin-redis.md)
+  * [kafka](/zh-cn/plugins/plugin-kafka.md)
+  * [logging](/zh-cn/plugins/plugin-logging.md)
+  * [spring](/zh-cn/plugins/plugin-spring.md)
+  * [waf](/zh-cn/plugins/plugin-waf.md)
+  * [client](/zh-cn/plugins/plugin-client.md)
+  * [quartz](/zh-cn/plugins/plugin-quartz.md)
 
 * 更多
   * [加入Cloudopt Next社区](/zh-cn/join-us.md)

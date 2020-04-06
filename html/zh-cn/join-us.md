@@ -13,7 +13,6 @@ Cloudopt Next社区正在不断完善和增长中，如果您正在阅读本文�
 - 请发送邮件到support@cloudopt.net
 - 请在GitHub发送[Issue](https://github.com/cloudoptlab/cloudopt-next/issues)提交您的问题，我们将尽快为您解答。
 - 如果您在中国，还可以加入交流QQ群：557692142。
-- 加入[WhatsApp](https://chat.whatsapp.com/FZBYw2ZSMdRHqappnKDdk0)群组。
 
 ## 贡献代码
 您可以随时为Cloudopt Next贡献您的代码。

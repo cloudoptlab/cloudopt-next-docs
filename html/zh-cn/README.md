@@ -1,17 +1,17 @@
 <img src="https://www.cloudopt.net/static/images/logo.svg" alt="Cloudopt Next" style="zoom:50%;" />
 
-Cloudopt Next是基于Kotlin、Vertx的一个面向下一代的极其轻量级的微服务框架，您可以处理Url的解析，数据的封装,Json的输出等等，从根本上减少开发时间、提升开发体验。Cloudopt Next吸收了[Spring Boot](https://github.com/spring-projects/spring-boot)、[JFinal](https://github.com/jfinal/jfinal)、[Resty](https://github.com/Dreampie/Resty)、[Vertx](https://github.com/vert-x3/vertx-web)等优秀项目的思想,不仅拥有非常好的开发体验还拥有着极低的学习曲线。
+Cloudopt Next是基于Kotlin、Vertx的一个面向下一代的极其轻量级的微服务框架，您可以处理Url的解析，数据的封装,Json的输出等等，从根本上减少开发时间、提升开发体验。Cloudopt Next吸收了 [Spring Boot](https://github.com/spring-projects/spring-boot)、[JFinal](https://github.com/jfinal/jfinal)、[Resty](https://github.com/Dreampie/Resty)、[Vertx](https://github.com/vert-x3/vertx-web) 等优秀项目的思想,不仅拥有非常好的开发体验还拥有着极低的学习曲线。
 
 **Cloudopt Next主要拥有以下特点：**
 
-- 极简设计，几乎零配置，与Spring Boot一样使用Yaml。
-- 脱离传统MVC，专业的事由专业的做。
+- 极简设计，几乎零配置。
+- 脱离传统 MVC，专业的事由专业的做。
 - 支持Plugin体系，扩展性强。
 - 不依赖Tomcat、Jetty。
-- 多视图支持，支持FreeMarker、Beetl等。
+- 多视图支持，支持FreeMarker、Hbs等。
 - 同时支持Kotlin和Java开发。
-- 支持[Vertx](http://vertx.io/)体系
-- 提供了一系列好用的工具集，如cloudopt-next-logging、cloudopt-next-kafka、cloudopt-next-encrypt、cloudopt-next-waf等。
+- 支持 [Vertx](http://vertx.io/)体系
+- 提供了一系列好用的工具集，如 cloudopt-next-logging、cloudopt-next-kafka、cloudopt-next-encrypt、cloudopt-next-waf 等。
 
 ## 安装和开始
 
@@ -19,23 +19,16 @@ Cloudopt Next是基于Kotlin、Vertx的一个面向下一代的极其轻量级�
 
 让我们来看看一个简单的基于Cloudopt Next的路由：
 
-[Kotlin]
-
 ````kotlin
 @API("/")
 class IndexController : Resource() {
-
     @GET
     fun get(){
-        var view = View()
-        view.view = "index"
-        renderHtml(view)
+        renderHtml(view = "index")
     }
-
 }
 ````
 
-[Java]
 ````java
 @API(value = "/")
 public class IndexController extends Resource {
@@ -59,7 +52,6 @@ public class IndexController extends Resource {
 - 请发送邮件到support@cloudopt.net
 - 请在GitHub发送[Issue](https://github.com/cloudoptlab/cloudopt-next/issues)提交您的问题，我们将尽快为您解答。
 - 如果您在中国，还可以加入交流QQ群：557692142。
-- 加入[WhatsApp](https://chat.whatsapp.com/FZBYw2ZSMdRHqappnKDdk0)群组。
 
 ## 报告问题
 Cloudopt Next使用GitHub的问题跟踪系统，以记录bug和特性请求。如果您想提出一个问题，可以参考下面的建议：

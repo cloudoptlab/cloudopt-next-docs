@@ -5,22 +5,21 @@ Jsoner is Cloudopt Next's Json utility class. Almost all Json-related operations
 ````kotlin
 fun help(){
     Jsoner.toJsonString(object)
-    Jsoner.toJsonObject("json")
+    Jsoner.toJsonMap("json")
     Jsoner.toJsonObject("json",TestBean::class.java)
-    Jsoner.toJsonArray("json")
     Jsoner.toJsonArray("json",TestBean::class.java)
+    Jsoner.read("testfile.json")
 }
 ````
 
 ````java
 public void help(){
     Jsoner.toJsonString(object);
-    Jsoner.toJsonObject("json");
+    Jsoner.toJsonMap("json");
     Jsoner.toJsonObject("json",TestBean.class);
-    Jsoner.toJsonArray("json");
     Jsoner.toJsonArray("json",TestBean.java);
+    Jsoner.read("testfile.json");
 }
-````
 
 ## Custom Jsoner
 

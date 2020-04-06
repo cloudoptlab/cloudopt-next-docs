@@ -1,10 +1,10 @@
 ## Use Render
 
-Render is syntactic sugar that has been written in the Resource class. When you need to output something, you can call the method directly. Currently supported views are Html, Json, Text, FreeMaker, Hbs, Beetl. These types can be used directly in the Resource.
+Render is syntactic sugar that has been written in the Resource class. When you need to output something, you can call the method directly. Currently supported views are Html, Json, Text, FreeMaker, Hbs. These types can be used directly in the Resource.
 
-It should be noted that FreeMaker, Hbs, and Beetl all need to refer to their dependencies. Cloudopt Next does not. More code examples can be found at [GitHub](https://github.com/cloudoptlab/cloudopt-next/blob/master/cloudopt-next-web/src/test/java/net/cloudopt/next/web/test/ Controller/IndexController.kt).
+It should be noted that FreeMaker, Hbs all need to refer to their dependencies. Cloudopt Next does not. More code examples can be found at [GitHub](https://github.com/cloudoptlab/cloudopt-next/blob/master/cloudopt-next-web/src/test/java/net/cloudopt/next/web/test/ Controller/IndexController.kt).
 
-When rendering the page, Render automatically reads the file according to the configuration of the webroot item in the configuration file. The default is in the templates folder.
+When rendering the page, Render automatically reads the file according to the configuration of the templates item in the configuration file. The default is in the templates folder.
 
 
 ## Create your own Render

@@ -126,6 +126,37 @@ public class IndexController extends Resource {
 }
 ````
 
+
+## 获取表单数据
+
+如果您需要获取客户端传递过来的参数，您可以直接在方法中使用getParam()方法获取。
+
+````kotlin
+@API("/")
+class IndexController : Resource() {
+
+    @GET
+    fun get(){
+        renderText(getAttr("name") ?: "")
+        renderJson(getAttr(TestBean::class.java))
+    }
+
+}
+````
+
+````java
+@API("/")
+public class IndexController extends Resource {
+
+    @GET
+    public void get(){
+        renderText(getAttr("name"));
+        renderJson(getAttr(TestBean::class.java));
+    }
+
+}
+````
+
 ## Cookie
 
 Cookie还支持更多设置，具体可以看setCookie方法的参数注释。

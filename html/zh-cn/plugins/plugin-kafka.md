@@ -2,7 +2,7 @@ Kafka是由Apache软件基金会开发的一个开源流处理平台，由Scala�
 
 Cloudopt Next为Kafka提供了插件，您只需要在配置文件中配置后并启动插件既可。
 
-在使用前请先自行引用相应的依赖。如果您并没有继承cloudopt-next-parent的话，请自行添加版本号。
+在使用前请先自行引用相应的依赖，请自行添加版本号。
 
 ````xml
 <dependency>
@@ -11,14 +11,19 @@ Cloudopt Next为Kafka提供了插件，您只需要在配置文件中配置后�
 </dependency>
 ````
 
-````yaml
-net:
-  cloudopt:
-    next:
-      web:
-        packageName: "net.cloudopt.next.kafka.test"
-      kafka:
-        servers: "PLAINTEXT://127.0.0.1:9092"
+````json
+{
+  "kafka": {
+    "bootstrap.servers": "PLAINTEXT://127.0.0.1:9092",
+    "key.deserializer": "org.apache.kafka.common.serialization.StringDeserializer",
+    "value.deserializer": "org.apache.kafka.common.serialization.StringDeserializer",
+    "key.serializer": "org.apache.kafka.common.serialization.StringSerializer",
+    "value.serializer": "org.apache.kafka.common.serialization.StringSerializer",
+    "acks": "1",
+    "group.id": "net.cloudopt.next",
+    "application.id": "service"
+  }
+}
 ````
 
 ````kotlin
@@ -69,18 +74,6 @@ public class TestKafka implements KafkaListener {
 
 }
 ````
-您还可以在配置文件中进行更多设置。
+> 您还可以在配置文件中进行更多设置，具体参数名请参考Kafka官方文档。
 
-| Name     | Default| Description|
-|:--------:|:---------|:-------|
-| servers| ""| Kafka服务器地址。      |
-| keyDeserializer| "org.apache.kafka.common.serialization.StringDeserializer"| Key的反序列化实现类。      |
-| valueDeserializer| "org.apache.kafka.common.serialization.StringDeserializer"| Value的反序列化实现类。      |
-| groupId| "cloudopt"| consumer所属的consumer group。      |
-| offsetRest| "earliest"| 当发现offset超出合理范围（out ofrange)时进行的操作。      |
-| autoCommit| "false"| 如果是true,定期向zk中更新Consumer已经获取的last message offset。      |
-| keySerializer| "org.apache.kafka.common.serialization.StringSerializer"| Key的序列化实现类。      |
-| valueSerializer| "org.apache.kafka.common.serialization.StringSerializer"| Value的序列化实现类。      |
-| acks| "1"| 0表示producer无须等待leader的确认，1代表需要leader确认写入它的本地log并立即确认，-1代表所有的备份都完成后确认。仅仅for sync。      |
-
-如果您需要配置更多东西，您可以直接通过KafkaManager.config进行配置，具体参数名请参考Kafka官方文档。
+在 2.0.0 版本以上，支持 Kafka Streams，你只需要在配置文件中增加 "streams": "true", 便会自动创建 Kafka Streams 的链接。因为 Kafka Streams 是依赖 Kafka 的，所以在参数设置就没有特地将两者区分开来，都是在关键字 kafka 下设置。

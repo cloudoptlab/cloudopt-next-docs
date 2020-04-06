@@ -1,6 +1,6 @@
-cloudopt-plugin-encrypt是Cloudopt Next的加密工具包。目前支持Base64、MD5、AES、RSA、DES、Sha1、Sha加密算法。
+cloudopt-plugin-encrypt 是 Cloudopt Next 的加密工具包。目前支持 Base64、MD5、AES、RSA、DES、Sha1、Sha 加密算法。
 
-在使用前请先自行引用相应的依赖。如果您并没有继承cloudopt-next-parent的话，请自行添加版本号。
+在使用前请先自行引用相应的依赖，请自行添加版本号。
 
 ````xml
 <dependency>

@@ -1,6 +1,6 @@
-cloudopt-next-redis，是移植于JFinal的RedisPlugin，使用RedisPlugin可以极度方便的使用redis，该插件不仅提供了丰富的API，而且还同时支持多redis服务端。Redis拥有超高的性能，丰富的数据结构，天然支持数据持久化，是目前应用非常广泛的nosql数据库。对于redis的有效应用可极大提升系统性能，节省硬件成本。
+cloudopt-next-redis，是移植于 JFinal 的RedisPlugin，使用 RedisPlugin 可以极度方便的使用redis，该插件不仅提供了丰富的API，而且还同时支持多 redis 服务端。Redis 拥有超高的性能，丰富的数据结构，天然支持数据持久化，是目前应用非常广泛的 nosql 数据库。对于 redis 的有效应用可极大提升系统性能，节省硬件成本。
 
-在使用前请先自行引用相应的依赖。如果您并没有继承cloudopt-next-parent的话，请自行添加版本号。
+在使用前请先自行引用相应的依赖。请自行添加版本号。
 
 ````xml
 <dependency>
@@ -13,21 +13,19 @@ cloudopt-next-redis，是移植于JFinal的RedisPlugin，使用RedisPlugin可以
 
 cloudopt-next-redis同样支持自动读取配置文件。
 
-````yaml
-net:
-  cloudopt:
-    next:
-      redis:
-        cacheName: "default"
-        host: "localhost"
-        port: 6379
-        timeout: 3000
-        password: ""
-        database: 0
-        clientName: ""
+````json
+{
+  "redis": {
+    "host": "localhost",
+    "port": 6379,
+    "timeout": 3000,
+    "password": "",
+    "database": 0
+  }
+}
 ````
 
-所有参数都不是必须填写的，默认的host为localhost，端口为6379。
+所有参数都不是必须填写的，默认的 host 为 localhost，端口为 6379。
 
 ## 启动
 

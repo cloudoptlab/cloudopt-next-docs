@@ -2,16 +2,16 @@ Cloudopt Next本身附带了一个建议的Waf插件，Waf可以有效阻止SQL�
 
 cloudopt-next-web与cloudopt-next-waf已经深度整合，无需另外启动插件。
 
-````yaml
-net:
-  cloudopt:
-    next:
-      waf:
-        plus: true
-        csrf: false
-        xss: true
-        sql: true
-        mongodb: true
+````json
+{
+  "waf":{
+    "plus": true,
+    "csrf": false,
+    "xss": true,
+    "sql": true,
+    "mongodb": true
+  }
+}
 ````
 
 | Name     | Description|

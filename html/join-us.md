@@ -13,7 +13,6 @@ Resources you will enjoy:
 - Please send an email to support@cloudopt.net
 - Please submit your question on GitHub [Issue](https://github.com/cloudoptlab/cloudopt-next/issues), and we will get back to you as soon as possible.
 - If you are in China, you can also join the exchange QQ group: 557692142.
-- Join the [WhatsApp](https://chat.whatsapp.com/FZBYw2ZSMdRHqappnKDdk0) group.
 
 ## Contribution code
 You can contribute your code for Cloudopt Next at any time.
