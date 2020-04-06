@@ -1,4 +1,4 @@
-![Cloudopt Next](https://github.com/cloudoptlab/cloudopt-next/raw/master/logo.png)
+<img src="https://www.cloudopt.net/static/images/logo.svg" alt="Cloudopt Next" style="zoom:50%;" />
 
 
 Cloudopt Next is a very lightweight micro-service framework based on kotlin and vertx for the Next generation. You can handle url parsing, data encapsulation, and Json output. Radically reducing development time and improving development experience. Cloudopt Next absorbed the ideas of [Spring Boot](https://github.com/spring-projects/spring-boot)，[JFinal](https://github.com/jfinal/jfinal)，[Resty](https://github.com/Dreampie/Resty)，[Vertx](https://github.com/vert-x3/vertx-web) and other excellent projects, and not only had a excellent development experience, but also had a shallow learning curve.
@@ -25,16 +25,12 @@ You can view the [document](https://next.cloudopt.net) by visiting the official 
 
 Let's take a look at a simple route based on Cloudopt Next:
 
-[Kotlin]
-
 ````kotlin
 @API("/")
 class IndexController : Resource() {
     @GET
     fun get(){
-        var view = View()
-        view.view = "index"
-        renderHtml(view)
+        renderHtml(view = "index")
     }
 }
 ````
@@ -46,11 +42,11 @@ public class IndexController extends Resource {
     public void get(){
         View v = new View();
         v.setView("index");
-        renderHtml(v);
+        renderHtml(view);
     }
 }
 ````
-
+ 
 ## Getting help
 
 ---------------------

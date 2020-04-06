@@ -79,3 +79,8 @@
     vertical-align: middle;
     margin-right: 4px;
 }
+
+p {
+    color: var(--theme-color);
+    color: var(--text_color);
+}
