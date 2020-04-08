@@ -1,6 +1,6 @@
 <img src="https://www.cloudopt.net/static/images/logo.svg" alt="Cloudopt Next" style="zoom:50%;" />
 
-Cloudopt Next是基于Kotlin、Vertx的一个面向下一代的极其轻量级的微服务框架，您可以处理Url的解析，数据的封装,Json的输出等等，从根本上减少开发时间、提升开发体验。Cloudopt Next吸收了 [Spring Boot](https://github.com/spring-projects/spring-boot)、[JFinal](https://github.com/jfinal/jfinal)、[Resty](https://github.com/Dreampie/Resty)、[Vertx](https://github.com/vert-x3/vertx-web) 等优秀项目的思想,不仅拥有非常好的开发体验还拥有着极低的学习曲线。
+Cloudopt Next是基于 Kotlin、Vertx 的一个面向下一代的极其轻量级的微服务框架，您可以处理 Url 的解析，数据的封装,Json 的输出等等，从根本上减少开发时间、提升开发体验。Cloudopt Next吸收了 [Spring Boot](https://github.com/spring-projects/spring-boot)、[JFinal](https://github.com/jfinal/jfinal)、[Resty](https://github.com/Dreampie/Resty)、[Vertx](https://github.com/vert-x3/vertx-web) 等优秀项目的思想,不仅拥有非常好的开发体验还拥有着极低的学习曲线。
 
 **Cloudopt Next主要拥有以下特点：**
 

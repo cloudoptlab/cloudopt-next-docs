@@ -1,7 +1,7 @@
 <img src="https://www.cloudopt.net/static/images/logo.svg" alt="Cloudopt Next" style="zoom:50%;" />
 
 
-Cloudopt Next is a very lightweight micro-service framework based on kotlin and vertx for the Next generation. You can handle url parsing, data encapsulation, and Json output. Radically reducing development time and improving development experience. Cloudopt Next absorbed the ideas of [Spring Boot](https://github.com/spring-projects/spring-boot)，[JFinal](https://github.com/jfinal/jfinal)，[Resty](https://github.com/Dreampie/Resty)，[Vertx](https://github.com/vert-x3/vertx-web) and other excellent projects, and not only had a excellent development experience, but also had a shallow learning curve.
+Cloudopt Next is an extremely lightweight microservices framework for the next generation, based on Kotlin, Vertx. You can handle url parsing, data encapsulation, and Json output. Radically reducing development time and improving development experience. Cloudopt Next absorbed the ideas of [Spring Boot](https://github.com/spring-projects/spring-boot)，[JFinal](https://github.com/jfinal/jfinal)，[Resty](https://github.com/Dreampie/Resty)，[Vertx](https://github.com/vert-x3/vertx-web) and other excellent projects, and not only had a excellent development experience, but also had a shallow learning curve.
 
 
 **Cloudopt Next has the following features:**

@@ -1,4 +1,4 @@
-## 什么是EventBus
+## EventBus
 
 Cloudopt Next是基于Vertx的，所以也支持Vertx的EventBus。
 
