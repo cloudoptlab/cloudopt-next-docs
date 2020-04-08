@@ -9,7 +9,15 @@ cloudopt-next-quartz，是方便大家使用 quartz 定时器的一个插件。v
 </dependency>
 ````
 
-````java
+````kotlin
+class Task1: Job {
+    override fun execute(context: JobExecutionContext?) {
+        println("Hello!")
+    }
+}
+````
+
+````kotlin
 var plugin = QuartzPlugin()
 val job = JobBean()
 job.jobClass = "net.cloudopt.next.quartz.test.Task1"

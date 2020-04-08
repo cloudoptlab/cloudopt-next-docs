@@ -9,6 +9,14 @@ Please refer to the corresponding dependency before using. Please add your own v
 </dependency>
 ````
 
+````kotlin
+class Task1: Job {
+    override fun execute(context: JobExecutionContext?) {
+        println("Hello!")
+    }
+}
+````
+
 ````java
 var plugin = QuartzPlugin()
 val job = JobBean()
