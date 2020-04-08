@@ -4,18 +4,19 @@ Cloudopt Next是基于Kotlin、Vertx的一个面向下一代的极其轻量级�
 
 **Cloudopt Next主要拥有以下特点：**
 
-- 极简设计，几乎零配置。
-- 脱离传统 MVC，专业的事由专业的做。
-- 支持Plugin体系，扩展性强。
-- 不依赖Tomcat、Jetty。
-- 多视图支持，支持FreeMarker、Hbs等。
-- 同时支持Kotlin和Java开发。
-- 支持 [Vertx](http://vertx.io/)体系
-- 提供了一系列好用的工具集，如 cloudopt-next-logging、cloudopt-next-kafka、cloudopt-next-encrypt、cloudopt-next-waf 等。
+> **简单** 极简设计，几乎不要任何配置，不依赖 Tomcat、Jetty 等 Web 容器。
 
-## 安装和开始
+> **异步** 基于 vertx，，轻松实现高性能的异步服务。
+
+> **扩展** 支持 vertx 体系的各种组件，同时支持通过插件扩展功能，官方也提供了大量好用的插件。
+
+> **中文** 全中文文档、中文社区，帮助中文开发者快速上手
+
+## 示例
 
 您可以通过访问[Cloudopt Next的官网](https://next.cloudopt.net)来查看文档，也可以前往[Example](https://github.com/cloudoptlab/cloudopt-next-example)查看简单的示例。
+
+### 路由
 
 让我们来看看一个简单的基于Cloudopt Next的路由：
 
@@ -40,6 +41,43 @@ public class IndexController extends Resource {
         renderHtml(v);
     }
 }
+````
+
+### 启动
+````kotlin
+fun main(args: Array<String>) {
+    CloudoptServer.run()
+}
+````
+
+````java
+public static void main(String args[]) { 
+    CloudoptServer.run();
+} 
+````
+
+### SockJS
+````kotlin
+@SocketJS("/socket/api/*")
+class SocketController : SocketJSResource {
+    override fun handler(socket: SockJSSocket) {
+        println(socket)
+        socket.handler {message->
+            println(message)
+            socket.write("Hello world!")
+        }
+    }
+}
+````
+
+### 插件
+````kotlin
+fun main(args: Array<String>) {
+    CloudoptServer.addPlugin(TestPlugin())
+    CloudoptServer.addPlugin(EventPlugin())
+    CloudoptServer.run()
+}
+
 ````
 
 ## 寻求帮助

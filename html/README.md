@@ -6,22 +6,20 @@ Cloudopt Next is a very lightweight micro-service framework based on kotlin and 
 
 **Cloudopt Next has the following features:**
 
-- Minimalist design, almost 0 configuration.
-- Get out of the traditional MVC and do professional things professionally.
-- Support plugin system with strong expansibility.
-- Independent of Tomcat and Jetty.
-- Support FreeMarker, Hbs...
-- Support both Kotlin and Java development.
-- Support [Vertx](http://vertx.io/).
-- A series of easy-to-use toolsets, such as cloudopt-next-logging, cloudopt-next-kafka, cloudopt-next-encrypt, cloudopt-next-waf, etc.
+>**Simple** Minimalist design, almost no configuration, no dependence on tomcat, jetty and other web containers.
+>**Asyn** Based on vertx, it is easy to achieve high-performance asynchronous services.
+>**Plugin** Supports various components of the vertx system, and also supports the extension of functions through plug-ins. The official also provides a large number of useful plug-ins.
+>**Chinese** All Chinese documents, Chinese community to help Chinese developers get started quickly
 
 
 
-## Installation and Getting Started
+## Started
 
 ---------------------
 
 You can view the [document](https://next.cloudopt.net) by visiting the official website of Cloudopt Next, or you can go to [example](https://github.com/cloudoptlab/cloudopt-next-example) to see a simple example.
+
+### Route
 
 Let's take a look at a simple route based on Cloudopt Next:
 
@@ -46,6 +44,45 @@ public class IndexController extends Resource {
     }
 }
 ````
+
+### Run
+
+````kotlin
+fun main(args: Array<String>) {
+    CloudoptServer.run()
+}
+````
+
+````java
+public static void main(String args[]) { 
+    CloudoptServer.run();
+} 
+````
+
+### SockJS
+````kotlin
+@SocketJS("/socket/api/*")
+class SocketController : SocketJSResource {
+    override fun handler(socket: SockJSSocket) {
+        println(socket)
+        socket.handler {message->
+            println(message)
+            socket.write("Hello world!")
+        }
+    }
+}
+````
+
+### Plugin
+````kotlin
+fun main(args: Array<String>) {
+    CloudoptServer.addPlugin(TestPlugin())
+    CloudoptServer.addPlugin(EventPlugin())
+    CloudoptServer.run()
+}
+
+````
+
  
 ## Getting help
 

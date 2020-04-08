@@ -1,7 +1,4 @@
 <div class="nexter">
-    <div class="avatar">
-        <img src="/images/avatar/2018030700.jpg" alt="T-baby" width="80" height="80">
-    </div>
     <div class="profile">
         <h3 data-official-title="Benevolent Dictator For Life">
             T-baby
@@ -57,9 +54,6 @@
 </div>
 
 <div class="nexter">
-    <div class="avatar">
-        <img src="/images/avatar/2018032601.jpg" alt="Champagne" width="80" height="80">
-    </div>
     <div class="profile">
         <h3 data-official-title="Benevolent Dictator For Life">
             Champagne
@@ -102,9 +96,6 @@
 </div>
 
 <div class="nexter">
-    <div class="avatar">
-        <img src="/images/avatar/2018030701.jpg" alt="Simon" width="80" height="80">
-    </div>
     <div class="profile">
         <h3 data-official-title="Benevolent Dictator For Life">
             Simon
@@ -145,9 +136,6 @@
 </div>
 
 <div class="nexter">
-    <div class="avatar">
-        <img src="/images/avatar/2018030702.jpg" alt="TT-Lin" width="80" height="80">
-    </div>
     <div class="profile">
         <h3 data-official-title="Benevolent Dictator For Life">
             TT-Lin
@@ -188,9 +176,6 @@
 </div>
 
 <div class="nexter">
-    <div class="avatar">
-        <img src="/images/avatar/2018032602.jpg" alt="Ccixyj" width="80" height="80">
-    </div>
     <div class="profile">
         <h3 data-official-title="Benevolent Dictator For Life">
             Ccixyj
