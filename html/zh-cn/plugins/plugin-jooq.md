@@ -62,3 +62,9 @@ fun main(args: Array<String>) {
     CloudoptServer.run(TestCase.class);
 }
 ````
+
+为了方便大家使用，内置了一个简单的分页器，可以体验一下。
+
+````kotlin
+JooqPaginate(Jooqer.dsl?.selectFrom(Tables.XXXX)?.where(XXXXXX.KEY.eq(id))!!,20,page).find(XXXXX::class.java)
+````

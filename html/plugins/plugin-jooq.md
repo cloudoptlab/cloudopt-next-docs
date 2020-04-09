@@ -62,3 +62,9 @@ fun main(args: Array<String>) {
     CloudoptServer.run(TestCase.class);
 }
 ````
+
+For everyone's convenience, there is a simple pager built in to experience it.
+
+````kotlin
+JooqPaginate(Jooqer.dsl?.selectFrom(Tables.XXXX)?.where(XXXXXX.KEY.eq(id))!!,20,page).find(XXXXX::class.java)
+````
