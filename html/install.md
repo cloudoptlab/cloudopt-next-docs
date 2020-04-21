@@ -8,7 +8,7 @@ The version of Cloudopt Next will use the version number + suffix, for example:ï
 
 The version number is generally three, and each update will change the version number according to the specific update content. If only the BUG is fixed, it will just change the third place, such as, 1.0.1. The addition of new features (including removal of old elements) and other major changes will improve the second version number. If there are very extensive changes that may not be compatible with the previous version, the first version number will be modified.
 
-The current latest version is: 2.0.2-BETA.
+The current latest version is: `2.0.3-BETA`.
 
 ## System Requirements
 
