@@ -14,7 +14,17 @@ Cloudopt Next is an extremely lightweight microservices framework for the next g
 
 >**Chinese** All Chinese documents, Chinese community to help Chinese developers get started quickly
 
+The CPU of the test computer is 2.2 GHz, six core Intel Core i7, and the memory is 16 GB 2400 MHz DDR4.
 
+The throughput parameter is 10 users and 10000 cycles.
+
+| Name        | Exceptions %    |  Throughput  |
+| --------   | -----:   | :----: |
+| Cloudopt Next        | 0%      |   20267.5/sec    |
+| Spring Boot        | 0%      |  18467.2/sec     |
+| Flask        | 0%      |   440.8/sec    |
+
+According to the performance test results, cloudopt next has 50 times the performance of flask and twice the performance of spring boot.
 
 ## Started
 

@@ -12,6 +12,20 @@ Cloudopt Next 是基于 Kotlin、Vertx 的一个面向下一代的极其轻量�
 
 > **中文** 全中文文档、中文社区，帮助中文开发者快速上手。
 
+## 性能
+
+测试电脑的 CPU 是 2.2 GHz 六核 Intel Core i7，内存为 16 GB 2400 MHz DDR4。
+
+吞吐量参数为用户数 10，循环 10000 次。
+
+| 框架名称        | 异常数量    |  吞吐量  |
+| --------   | -----:   | :----: |
+| Cloudopt Next        | 0%      |   20267.5/sec    |
+| Spring Boot        | 0%      |  18467.2/sec     |
+| Flask        | 0%      |   440.8/sec    |
+
+根据性能测试结果：Cloudopt Next 的性能是 Flask 的 50 倍，是 Spring Boot 的两倍。
+
 ## 示例
 
 您可以通过访问[Cloudopt Next的官网](https://next.cloudopt.net)来查看文档，也可以前往[Example](https://github.com/cloudoptlab/cloudopt-next-example)查看简单的示例。
