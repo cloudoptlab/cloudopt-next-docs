@@ -82,6 +82,11 @@ System: ${os}
 Time: ${time}
 ````
 
+## Hot deployment
+Cloudopt next has built-in hot deployment. You need to enable the hot deployment related settings of IDE before using. Set the main class to `net.cloudopt.next.web.CloudoptLauncher` and the program arguments to the class with `cloudoptserver. Run()` in the operation settings. By default, CloudoptSever will restart automatically when the class file in the project changes.
+
+>If you use kotlin, you may have slow restart. You can consider setting it to incremental update or manually compiling modified files.
+
 ##Complete example
 
 To facilitate your learning and use, we provide a simple Example that you can obtain by visiting [GitHub] (https://github.com/cloudoptlab/cloudopt-next-example).

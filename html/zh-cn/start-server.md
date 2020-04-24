@@ -82,6 +82,12 @@ System: ${os}
 Time: ${time}
 ````
 
+## 热部署
+
+Cloudopt Next 内置了热部署，在使用前你需要先开启 IDE 的热部署相关设置。在运行设置中将 Main Class 设置为 `net.cloudopt.next.web.CloudoptLauncher` ，Program arguments 设置为放置了 `CloudoptServer.run()` 的类即可。默认会监测项目中的 class 文件发生变动时会自动重启 CloudoptServer。
+
+> 如果你是用 Kotlin 的话可能会出现重启较慢的问题，可以考虑设置成增量更新，或者是手动编译修改的文件。
+
 ## 完整例子
 
 为了方便您的学习和使用，我们提供了一个简单的Example，您可以通过访问[GitHub](https://github.com/cloudoptlab/cloudopt-next-example)获取。
