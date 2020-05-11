@@ -137,8 +137,8 @@ class IndexController : Resource() {
 
     @GET
     fun get(){
-        renderText(getAttr("name") ?: "")
-        renderJson(getAttr(TestBean::class.java))
+        renderText(getParam("name") ?: "")
+        renderJson(getParam(TestBean::class.java))
     }
 
 }

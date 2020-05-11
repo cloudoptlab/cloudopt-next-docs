@@ -130,7 +130,7 @@ public class IndexController extends Resource {
 
 ## Get form datas
 
-If you need to get the form parameters passed by the client, you can get them directly in the method using the getAttr () method。
+If you need to get the form parameters passed by the client, you can get them directly in the method using the getParam() method。
 
 ````kotlin
 @API("/")
@@ -138,7 +138,7 @@ class IndexController : Resource() {
 
     @GET
     fun get(){
-        renderText(getAttr("name") ?: "")
+        renderText(getParam("name") ?: "")
     }
 
 }
@@ -150,7 +150,7 @@ public class IndexController extends Resource {
 
     @GET
     public void get(){
-        renderText(getAttr("name"));
+        renderText(getParam("name"));
     }
 
 }
