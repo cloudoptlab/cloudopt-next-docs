@@ -31,6 +31,7 @@
   * [Client](/plugins/plugin-client.md)
   * [Quartz](/plugins/plugin-quartz.md)
   * [i18N](/plugins/plugin-i18n.md)
+  * [Validator](/plugins/plugin-validator.md)
   
 * More
   * [Join the Cloudopt Next community](/join-us.md)

@@ -31,6 +31,7 @@
   * [client](/zh-cn/plugins/plugin-client.md)
   * [quartz](/zh-cn/plugins/plugin-quartz.md)
   * [i18n](/zh-cn/plugins/plugin-i18n.md)
+  * [validator](/zh-cn/plugins/plugin-validator.md)
 
 * 更多
   * [加入Cloudopt Next社区](/zh-cn/join-us.md)
