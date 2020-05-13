@@ -9,14 +9,29 @@ cloudopt-next-validator 是 Cloudopt Next 自带的一个优雅的数据校验�
 
 ````java
 public class Account(){
-    @NotNull(message="如果message里面包含了文字，那么出错时可以获取得到")
+    @NotNull(message="If the message contains text, you can get it in case of error")
     private String test;
+    // get and set
+}
+
+Account account=new Account();
+ValidatorTool.validate(account); //验证所有加了注解的字段并获取验证结果对象
+ValidatorTool.validate(account，"password", "username"); //只验证部分字段
+System.out.println(ValidatorTool.validate(account).getResult());
+System.out.println(ValidatorTool.validate(account).getMessage());
+````
+
+````kotlin
+data class Account(){
+    @get:NotNull(message="If the message contains text, you can get it in case of error")
+    var test:String=""
 }
 
 Account account=new Account()
-account.validation() //校验所有参数
-account.getErrorMessage()  //获取出错信息，就是校验失败的注解上message的内容
-account.validation("password", "username") //只校验某些参数
+ValidatorTool.validate(account) //验证所有加了注解的字段并获取验证结果对象
+ValidatorTool.validate(account，"password", "username") //只验证部分字段
+println(ValidatorTool.validate(account).result)
+println(ValidatorTool.validate(account).message)
 ````
 
 目前已经自带了以下的注解：
