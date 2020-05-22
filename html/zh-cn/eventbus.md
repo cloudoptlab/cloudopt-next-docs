@@ -6,7 +6,7 @@ Vert.x应用程序是事件驱动，异步和单线程的。 Vert.x过程通过�
 
 每个Verticle的运行都是在Vertx.x的实例单线程中，通过Event Loop进行调度，而Verticle之间的相互调用和数据传递都是通过EventBus进行的。
 
-我们不建议在非单机的情况下使用EventBus，请尽量使用消息队列。
+我们不建议在非单机的情况下使用EventBus。
 
 ## EventListener
 
@@ -28,6 +28,34 @@ class TestEventListener:EventListener {
 }
 ````
 
+## Send Message
+
 ````kotlin
 EventManager.send("net.cloudopt.web.test", "This is test message!")
+EventManager.public("net.cloudopt.web.test", "This is test message!")
+````
+
+## After Event
+
+其实我们在日常开发中经常会碰到调用完请求需要做些什么事情的场景，如新用户注册后需要给他发放优惠卷，在传统的开发模式下发放优惠券的代码是放在注册的代码后面。但是如果要再增加记录用户登录时间等功能的话，这个路由方法中的代码将会非常的多。
+
+为了帮助大家在实际开发中进行解耦，我们提供了 `@afterEvent` 注解。Cloudopt Next 会自动在请求准备结束时调用 EventBus 的 send 方法进行发送，那么只需要让消费者订阅相应的事件就可以解耦了。
+
+在使用这个注解前请先加载 `EventPlugin`。
+
+````kotlin
+@GET("afterEvent")
+@AfterEvent(["net.cloudopt.web.test"])
+fun afterEvent() {
+    renderText("AfterEvent is success!")
+}
+````
+
+````kotlin
+@AutoEvent("net.cloudopt.web.test")
+class TestEventListener:EventListener {
+    override fun listener(message: Message<Any>) {
+        print(message.body())
+    }
+}
 ````

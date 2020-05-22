@@ -1,4 +1,4 @@
-我们推荐使用 docker 进行部署，同时也准备好了两个基础的 docker 镜像 `cloudopt/cloudopt-next-docker:jdk8` 和 `cloudopt/cloudopt-next-docker:jdk10` 帮助大家简化部署过程。
+我们推荐使用 docker 进行部署，同时也准备好了三个基础的 docker 镜像 `cloudopt/cloudopt-next-docker:jdk8` 和 `cloudopt/cloudopt-next-docker:jdk10` 、 `cloudopt/cloudopt-next-docker:jdk11-openj9-node12` 帮助大家简化部署过程。所有镜像都已经安装了 node12。
 
 首先你需要设置 maven 的配置，指定用于运行的 main 方法文件，然后在打包成 jar 后，执行这个 jar 就会执行这个方法。
 

@@ -1,4 +1,4 @@
-We recommend using docker for deployment. At the same time, we have prepared two basic docker images: `cloudopt/cloudopt-next-docker:jdk8` and `cloudopt/cloudopt-next-docker:jdk10` to help you simplify the deployment process.
+We recommend using docker for deployment. At the same time, we have prepared three basic docker images: `cloudopt/cloudopt-next-docker:jdk8` and `cloudopt/cloudopt-next-docker:jdk10` and `cloudopt/cloudopt-next-docker:jdk11-openj9-node12` to help you simplify the deployment process. All images have node12 installed.
 
 First of all, you need to set the configuration of maven, specify the main method file to run, and then after packaging into jar, execute the jar to execute the method.
 ````xml

@@ -28,6 +28,34 @@ class TestEventListener:EventListener {
 }
 ````
 
+## Send Message
+
 ````kotlin
 EventManager.send("net.cloudopt.web.test", "This is test message!")
+EventManager.public("net.cloudopt.web.test", "This is test message!")
+````
+
+## After Event
+
+In fact, in our daily development, we often encounter a scenario where we need to do something after calling the request. For example, a new user needs to be issued a coupon after registration. In the traditional development mode, the code to issue a coupon is placed behind the registered code. But if we want to add the function of recording user login time, there will be a lot of code in this routing method.
+
+In order to help you decouple in the actual development, we provide the "@ afterevent" annotation. Cloudopt next will automatically call the send method of eventbus at the end of request preparation to send, so only the consumer needs to subscribe to the corresponding event can be decoupled.
+
+Please load 'eventplugin' before using this annotation.
+
+````kotlin
+@GET("afterEvent")
+@AfterEvent(["net.cloudopt.web.test"])
+fun afterEvent() {
+    renderText("AfterEvent is success!")
+}
+````
+
+````kotlin
+@AutoEvent("net.cloudopt.web.test")
+class TestEventListener:EventListener {
+    override fun listener(message: Message<Any>) {
+        print(message.body())
+    }
+}
 ````
