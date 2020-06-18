@@ -434,5 +434,32 @@ public class IndexController extends Resource {
 }
 ````
 
+## 参数注入
 
+Since `2.0.6.0-BETA` version, direct declaration in parameters is supported. At the same time, it automatically skips the parameter checks according to the reference and non-reference methods to avoid the reflection scan reduces the performance. Include the `cloudopt-next-validator` plug-in first.
 
+````kotlin
+    @GET("args")
+    fun argsController(
+        @Parameter("name", defaultValue = "Peter")
+        name: String,
+        @Parameter("age")
+        age: Int
+    ) {
+        var map = hashMapOf<String, Any>()
+        map["name"] = name
+        map["age"] = age
+        renderJson(map)
+    }
+````
+
+You can specify the parameter name in the `@Parameter` comment, which is used when the user sends an http request. Parameters are automatically injected. Or use the `@RequestBody` annotation to merge the entire body as a json string. Switch to object injection. It also supports declaring a parameter-checked comment directly on the parameter, which will check the parameter automatically. If the parameter check finds a problem, a 400 status code error is automatically generated and the error message from the verifier is automatically placed in the The data in the context of the context object in the resource object can be customized with the of the error interceptor to intercept.
+
+````kotlin
+    val errorMessage = if(context.data().containsKey("errorMessage")){
+            context.data()["errorMessage"].toString()
+        }else{
+            "This is a bad http request, please check if the parameters match the requirements."
+        }
+        renderJson(restult(errorStatusCode.toString(),errorMessage))
+````

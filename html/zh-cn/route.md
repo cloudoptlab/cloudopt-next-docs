@@ -435,3 +435,33 @@ public class IndexController extends Resource {
 
 }
 ````
+
+## 参数注入
+
+自 `2.0.6.0-BETA` 版本后支持直接声明在参数中即可。同时会根据有参方法和无参方法自动跳过参数校验，以免反射扫描降低性能。使用时请先引入 `cloudopt-next-validator` 插件。
+
+````kotlin
+    @GET("args")
+    fun argsController(
+        @Parameter("name", defaultValue = "Peter")
+        name: String,
+        @Parameter("age")
+        age: Int
+    ) {
+        var map = hashMapOf<String, Any>()
+        map["name"] = name
+        map["age"] = age
+        renderJson(map)
+    }
+````
+
+你可以通过 `@Parameter` 注解指定参数名称，在用户发送 http 请求时自动将参数注入。或者使用 `@RequestBody` 注解将整个 body 作为 json 字符串并转为对象注入。同时还支持在参数上直接声明参数校验的注解，会自动校验参数。如果参数校验发现问题会自动发生 400 状态码错误并且将验证器上的错误信息自动放入 resource 对象中的上下文对象 context 的 data 中，可以通过自定义的错误拦截器进行拦截。
+
+````kotlin
+    val errorMessage = if(context.data().containsKey("errorMessage")){
+            context.data()["errorMessage"].toString()
+        }else{
+            "This is a bad http request, please check if the parameters match the requirements."
+        }
+        renderJson(restult(errorStatusCode.toString(),errorMessage))
+````
